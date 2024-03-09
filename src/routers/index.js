@@ -31,9 +31,8 @@ router.get('/version/bot', async(req, res) => {
         res.json({
             "status": "Active",
             "version": "1.0-rc",
-            "license": "kamu nanya?",
-            "author": "vicilia light garden",
-            "description": "Light Garden Poreper"
+            "license": "Apache-2.0",
+            "author": "vicilia-light-garden"
         })
     }
 })
