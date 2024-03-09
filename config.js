@@ -1,7 +1,21 @@
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
 import moment from'moment-timezone';
+import http from'node:http';
 
+const api = {
+"host": "api.ipify.org",
+"port": 80,
+"path": "/"
+};
+
+http.get(api, response => {
+response.on("data", ip => {
+const ipi = `${ip}`
+});
+});
+
+global.ipy = ipi
 global.__filename = fileURLToPath(import.meta.url);
 global.__dirname = dirname(__filename);
 
