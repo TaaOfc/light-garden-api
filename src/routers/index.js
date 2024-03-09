@@ -1,39 +1,49 @@
-import "../../config.js";
-import express from "express";
-import fs from "fs"
-import downloader from "./api/downloader.js"
-import generate from "./api/generate.js"
-import islami from "./api/islami.js"
-import search from "./api/search.js"
-import stalk from "./api/stalk.js"
+// auth.js
+import express from 'express';
+import session from 'express-session';
+import passport from 'passport';
+import { configurePassport, authenticateWithGoogle, handleGoogleCallback, ensureAuthenticated } from '../Utils/passport.js';
 
-import main from "./main.js"
-import admin from "./other/admin.js"
-import pages from "./pages.js"
+const app = express();
 
-const router = express();
+app.use(session({
+  secret: 'xyzenkabagohnaisa',
+  resave: true,
+  saveUninitialized: true,
+  cookie: {
+    maxAge: 3600000, // 1 jam dalam milidetik
+  },
+}));
 
-router.use('/', downloader);
-router.use('/', generate);
-router.use('/', islami);
-router.use('/', search);
-router.use('/', stalk);
+app.use(passport.initialize());
+app.use(passport.session());
 
-router.use('/', main);
-router.use('/', admin);
-router.use('/', pages);
+// Configure Passport
+//configurePassport();
 
-router.get('/version/bot', async(req, res) => {
-    const q = req.query.q
+// Routes
+/*app.get('/login', authenticateWithGoogle);
 
-    if (!q) return res.json({ status: false });
-    if (q === '1.0rc') {
-        res.json({
-            "status": "Active",
-            "version": "1.0-rc",
-            "license": "Apache-2.0",
-            "author": "vicilia-light-garden"
-        })
-    }
-})
-export default router;
+app.get('/auth/google/callback', handleGoogleCallback, (req, res) => {
+  const redirectTo = req.session.returnTo || '/auth/profile';
+  delete req.session.returnTo; // Hapus setelah digunakan
+  res.redirect(redirectTo);
+});
+*/
+
+app.get('/auth/profile', (req, res) => {
+  res.render('./pages/auth/profile');
+});
+
+app.get('/', (req, res) => {
+    res.render('./pages/main/landing');
+});
+
+app.get('/logout', (req, res) => {
+  if (req.isAuthenticated()) {
+    req.logout();
+  }
+  res.redirect('/dashboard');
+});
+
+export default app;
