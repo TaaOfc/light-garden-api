@@ -15,7 +15,7 @@ const ipi = `${ip}`
 });
 });
 
-global.ipy = ipi
+global.ipy = `${ipi}`
 global.__filename = fileURLToPath(import.meta.url);
 global.__dirname = dirname(__filename);
 
