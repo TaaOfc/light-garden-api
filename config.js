@@ -8,7 +8,9 @@ global.host = "https://light-garden-team.my.id"
 
 global.creator = "okta and vicillia"
 
-global.key = 'adriankasep'
+global.key = 'okta'
+
+global.day = Date()
 
 global.limit = {
     free: 15,
