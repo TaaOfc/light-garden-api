@@ -2,8 +2,8 @@ const downloader = [
     { name: 'Tiktok', category: 'Downloader', requestMethod: 'GET', description: 'Downloader For Tiktok', queryParameter: 'apikey, url', status: 'active', link: '/api/downloader/tiktok?url=https://www.tiktok.com/@kaiser1570/video/7344365819247316229&apikey=okta'},
     { name: 'Instagram', category: 'Downloader', requestMethod: 'GET', description: 'Downloader For Instagram', queryParameter: 'apikey, url', status: 'active', link: '/api/downloader/instagram?url=https://www.instagram.com/p/C2UCntOrHhI&apikey=okta'},
     { name: 'Pinterest', category: 'Downloader', requestMethod: 'GET', description: 'Downloader For Pinterest', queryParameter: 'apikey, url', status: 'active', link: '/api/downloader/pinterest?url=https://id.pinterest.com/pin/6755468182311723/&apikey=okta'},
-    { name: 'Youtube Video', category: 'Downloader', requestMethod: 'GET', description: 'Downloader For Youtube Video', queryParameter: 'apikey, url', status: 'active', link: '/api/downloader/youtubevideo?url=https://youtu.be/cBNj9G9uk6Y?si=wx-zYbTIkTY8A_aj&apikey=okta'},
-    { name: 'Youtube Audio', category: 'Downloader', requestMethod: 'GET', description: 'Downloader For Youtube Audio', queryParameter: 'apikey, url', status: 'active', link: '/api/downloader/youtubeaudio?url=https://youtu.be/cBNj9G9uk6Y?si=wx-zYbTIkTY8A_aj&apikey=okta'},
+    { name: 'Youtube Video', category: 'Downloader', requestMethod: 'GET', description: 'Downloader For Youtube Video', queryParameter: 'apikey, url', status: 'active', link: '/api/downloader/youtubevideo?url=https://youtu.be/e_uhbMpLXZI?si=rdkcHVK6-hOwXLEg.&apikey=okta'},
+    { name: 'Youtube Audio', category: 'Downloader', requestMethod: 'GET', description: 'Downloader For Youtube Audio', queryParameter: 'apikey, url', status: 'active', link: '/api/downloader/youtubeaudio?url=https://youtu.be/e_uhbMpLXZI?si=rdkcHVK6-hOwXLEg.&apikey=okta'},
 ]
 
 const islami = [
