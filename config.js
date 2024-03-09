@@ -1,5 +1,6 @@
 import { fileURLToPath } from 'url';
 import { dirname } from 'path';
+import moment from'moment-timezone';
 
 global.__filename = fileURLToPath(import.meta.url);
 global.__dirname = dirname(__filename);
@@ -10,7 +11,7 @@ global.creator = "okta and vicillia"
 
 global.key = 'okta'
 
-global.day = Date()
+global.day = moment().format("HH:mm:ss z")
 
 global.limit = {
     free: 15,
