@@ -4,9 +4,9 @@ import { dirname } from 'path';
 global.__filename = fileURLToPath(import.meta.url);
 global.__dirname = dirname(__filename);
 
-global.host = "https://api.xyzen.tech"
+global.host = "https://light-garden-team.my.id"
 
-global.creator = "xyzendev"
+global.creator = "okta and vicillia"
 
 global.key = 'adriankasep'
 
