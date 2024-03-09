@@ -1,4 +1,4 @@
-const apikeyList = ['okta', 'lann', 'xyzen'];//input key disini
+const apikeyList = ['okta', 'vicilia'];//input key disini
 
 const cekApikey = async (req, res, next) => {
     const apikey = req.query.apikey;
