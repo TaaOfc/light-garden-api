@@ -11,11 +11,9 @@ const api = {
 
 http.get(api, response => {
 response.on("data", ip => {
-const ipi = `${ip}`
+global.ipy = `${ip}`
 });
 });
-
-global.ipy = `${ipi}`
 global.__filename = fileURLToPath(import.meta.url);
 global.__dirname = dirname(__filename);
 
