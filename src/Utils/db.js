@@ -4,7 +4,7 @@ import _ from 'lodash';
 import fs from 'fs/promises';
 import yargs from 'yargs/yargs';
 
-const MONGO_URL = 'mongodb+srv://xyzenapis:xyzen@cluster0.0uplkml.mongodb.net/';
+const MONGO_URL = 'mongodb+srv://dbLight:@light-garden-api.txrzwjl.mongodb.net/';
 
 // Initialize opts and db
 global.opts = new Object(yargs(process.argv.slice(2)).exitProcess(false).parse());
