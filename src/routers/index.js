@@ -3,6 +3,7 @@ import express from "express";
 import fs from "fs"
 import downloader from "./api/downloader.js"
 import generate from "./api/generate.js"
+import internet from "./api/internet.js"
 import islami from "./api/islami.js"
 import search from "./api/search.js"
 import stalk from "./api/stalk.js"
@@ -15,6 +16,7 @@ const router = express();
 
 router.use('/', downloader);
 router.use('/', generate);
+router.use('/', internet);
 router.use('/', islami);
 router.use('/', search);
 router.use('/', stalk);
