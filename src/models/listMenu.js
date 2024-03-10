@@ -28,6 +28,7 @@ const searcher = [
 
 export {
     downloader,
+    internet,
     islami,
     generate,
     searcher
