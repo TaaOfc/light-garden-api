@@ -1,10 +1,10 @@
 import express from "express";
 import { cekApikey, limitApikey } from "../../Utils/apikey.js"
-import { hentaivid } from "../../Utils/scapers/all-in-one/scapers.js";
+import { hentai } from "../../Utils/scapers/all-in-one/scapers.js";
 
 const router = express.Router();
 
-router.get('/api/internet/hentaivid', cekApikey, async(req, res) => {
+router.get('/api/internet/hentai', cekApikey, async(req, res) => {
     try {
         const q = req.query.q;
 
