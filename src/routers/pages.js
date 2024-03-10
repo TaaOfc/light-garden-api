@@ -7,6 +7,10 @@ router.get('/pages/downloader', async(req, res) => {
     res.render('./pages/api/downloader', { data: downloader })
 })
 
+router.get('/pages/internet', async(req, res) => {
+    res.render('./pages/api/internet', { data: internet })
+})
+
 router.get('/pages/islami', async(req, res) => {
     res.render('./pages/api/islami', { data: islami })
 })
