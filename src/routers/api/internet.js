@@ -30,3 +30,5 @@ router.get('/api/internet/hentai', cekApikey, async(req, res) => {
         res.json(mess.error);
     }
 });
+
+export default router; 
