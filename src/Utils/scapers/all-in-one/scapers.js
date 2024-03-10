@@ -5,7 +5,7 @@ import ytdl from 'ytdl-core';
 /*
 INTERNET 
 */
-async function hentaivid() {
+async function hentai() {
 	return new Promise((resolve, reject) => {
 		const page = Math.floor(Math.random() * 1153)
 		axios.get('https://sfmcompile.club/page/' + page)
