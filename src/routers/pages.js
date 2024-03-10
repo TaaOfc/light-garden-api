@@ -1,5 +1,5 @@
 import express from "express";
-import { downloader, generate, islami, searcher } from "../models/listMenu.js";
+import { downloader, generate, internet, islami, searcher } from "../models/listMenu.js";
 
 const router = express.Router();
 
