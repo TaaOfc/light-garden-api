@@ -88,9 +88,7 @@ fs.readFile('../../database/milf.json', (err, data) => {
     const images = JSON.parse(data);
     const randomImage = images[Math.floor(Math.random() * images.length)];
 
-    res.send({
-      url: randomImage,
-    });
+    resolve(randomImage)
   })
 }
 /*
