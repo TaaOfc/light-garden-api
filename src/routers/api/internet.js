@@ -4,13 +4,21 @@ import { hentai } from "../../Utils/scapers/all-in-one/scapers.js";
 
 const router = express.Router();
 
-router.get('/api/internet/hentai', cekApikey, async (req, res) => {
+router.get('/api/internet/hentai', cekApikey, async(req, res) => {
     try {
-        const query = req.query.query;
+        const q = req.query.q;
 
-        if (!query) return res.json({ status: false });
+        if (!q) return res.json(global.mess.need.q);
 
-        const data = await hentai(query);
+        const data = await hentai(q);
+
+        if (!data) {
+            return res.json({
+                creator,
+                status: false,
+                message: "NOT FOUND"
+            });
+        }
 
         res.json({
             creator,
@@ -21,6 +29,6 @@ router.get('/api/internet/hentai', cekApikey, async (req, res) => {
         console.error(error);
         res.json(mess.error);
     }
-})
+});
 
 export default router; 
