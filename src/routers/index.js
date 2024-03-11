@@ -3,6 +3,7 @@ import express from "express";
 import fs from "fs"
 import downloader from "./api/downloader.js"
 import generate from "./api/generate.js"
+import game from "./api/game.js"
 import internet from "./api/internet.js"
 import islami from "./api/islami.js"
 import search from "./api/search.js"
@@ -16,6 +17,7 @@ const router = express();
 
 router.use('/', downloader);
 router.use('/', generate);
+router.use('/', game);
 router.use('/', internet);
 router.use('/', islami);
 router.use('/', search);
@@ -34,7 +36,7 @@ router.get('/version/bot', async(req, res) => {
             "status": "Active",
             "version": "1.0-rc",
             "license": "Apache-2.0",
-            "author": "xyzendev"
+            "author": "okta"
         })
     }
 })
