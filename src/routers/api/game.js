@@ -1,7 +1,6 @@
 import express from "express";
 import fetchJson from "../../lib/myfunc.js"
 import { cekApikey, limitApikey } from "../../Utils/apikey.js"
-import { tebakkata } from "../../Utils/scapers/all-in-one/scapers.js";
 
 const router = express.Router();
 
