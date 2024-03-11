@@ -55,7 +55,8 @@ exports.runtime = function(seconds) {
 	return dDisplay + hDisplay + mDisplay + sDisplay;
 }
 
-exports.jsonformat = (string) => {
-    return JSON.stringify(string, null, 2)
+export {
+fetchJson
 }
+
 
