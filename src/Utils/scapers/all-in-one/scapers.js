@@ -2,23 +2,13 @@ import axios from "axios";
 import cheerio from "cheerio";
 import ytdl from 'ytdl-core';
 import fs from 'fs'
-import fetchJson from '../../../lib/myfunc.js'
 import fetch from 'node-fetch'
 
 
 /*
 GAME
 */
-async function tebakkata() {
-let ra = await fetchJson('https://raw.githubusercontent.com/AlipBot/data-rest-api/main/tebakkata.json')
-	let ha = ra[Math.floor(Math.random() * ra.length)]
-  res.json({
-	status: true,
-	creator: `${creator}`,
-	result: ha
-   })
-   resolve(ha);
-}
+
 /*
 INTERNET 
 */
