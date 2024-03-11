@@ -4,7 +4,7 @@ const axios = require('axios')
 
 //―――――――――――――――――――――――――――――――――――――――――― ┏ Funtion App ┓ ―――――――――――――――――――――――――――――――――――――――――― \\
 
-exports.fetchJson = async (url, options) => {
+async function fetchJson (url, options) => {
     try {
         options ? options : {}
         const res = await axios({
