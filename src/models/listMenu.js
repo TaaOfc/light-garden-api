@@ -16,6 +16,10 @@ const islami = [
     {name: 'Detail Surah', category: 'Islami', requestMethod: 'GET' ,description: 'Detail Surah', queryParameter: 'apikey, query', status: 'active', link: '/api/islami/surah?apikey=okta&query=Al-Fatihah'},
 ]
 
+const game = [
+    {name: 'Tebak Kata', category: 'Game', requestMethod: 'GET' ,description: 'Game Tebak Kata', queryParameter: 'apikey', status: 'active', link: '/api/game/tebakkata?apikey=okta'},
+]
+
 const generate = [
     {name: 'Quote Text', category: 'Generate', requestMethod: 'GET', description: 'Fake Chats Text', queryParameter: 'apikey, text, name, avatar(url(img))', status: 'active', link: '/api/generate/quote?text=vicillia&name=okta&avatar=https://i.pinimg.com/236x/56/2e/be/562ebed9cd49b9a09baa35eddfe86b00.jpg&apikey=okta'},
     {name: 'Up Scale', category: 'Generate', requestMethod: 'GET', description: 'Up Scale Image', queryParameter: 'apikey, url(img)', status: 'active', link: '/api/generate/upscale?url=https://i.pinimg.com/564x/dd/ad/99/ddad996f9590a43855e3ffe5ab020977.jpg&apikey=okta'},
@@ -29,6 +33,7 @@ const searcher = [
 
 export {
     downloader,
+    game,
     internet,
     islami,
     generate,
