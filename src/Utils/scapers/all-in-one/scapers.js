@@ -72,13 +72,14 @@ async function nhentai(identifier) {
 		     }
 
 async function milf() {
-fs.readFile('../../database/milf.json', (err, data) => {
+	
+    fs.readFile('../../database/milf.json', (err, data) => {
     if (err) {
       res.status(500).send('Error reading file');
       return;
     }
 
-    const images = JSON.parse(data);
+    const images = Buffer.from(fs.readFile('../../database/milf.json'))
     const randomImage = images[Math.floor(Math.random() * images.length)];
 
     return randomImage
@@ -563,7 +564,6 @@ function quotesanime() {
 export {
     hentai,
     milf,
-    tebakkata,
     nhentai,
     ttdl,
     igdl,
