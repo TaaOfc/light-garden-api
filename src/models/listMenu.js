@@ -17,7 +17,7 @@ const islami = [
 ]
 
 const game = [
-    {name: 'Tebak Kata', category: 'Game', requestMethod: 'GET' ,description: 'Game Tebak Kata', queryParameter: 'apikey', status: 'active', link: '/api/game/tebakkata?apikey=okta'},
+    {name: 'Tebak Kata', category: 'Game', requestMethod: 'GET' ,description: 'Game Tebak Kata', queryParameter: 'apikey', status: 'active', link: '/api/game/tebakkata?q=kenapa20%aku20%cinta20%kamu&apikey=okta'},
 ]
 
 const generate = [
