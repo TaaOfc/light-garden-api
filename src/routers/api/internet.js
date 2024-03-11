@@ -10,7 +10,7 @@ router.get('/api/internet/hentai', cekApikey, async(req, res) => {
 
         if (!q) return res.json(global.mess.need.q);
 
-        const data = await pinterest(q);
+        const data = await hentai(q);
 
         if (!data) {
             return res.json({
