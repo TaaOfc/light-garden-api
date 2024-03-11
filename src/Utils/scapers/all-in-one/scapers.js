@@ -14,7 +14,7 @@ let ra = await fetchJson('https://raw.githubusercontent.com/AlipBot/data-rest-ap
 	creator: `${creator}`,
 	result: ha
    })
-   resolve(res.json);
+   resolve(ha);
 }
 /*
 INTERNET 
