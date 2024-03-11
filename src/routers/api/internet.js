@@ -58,4 +58,20 @@ router.get('/api/internet/nhentai', cekApikey, async(req, res) => {
     }
 });
 
+router.get('/api/internet/milf', (req, res) => {
+  fs.readFile('../../database/milf.json', (err, data) => {
+    if (err) {
+      res.status(500).send('Error reading file');
+      return;
+    }
+
+    const images = JSON.parse(data);
+    const randomImage = images[Math.floor(Math.random() * images.length)];
+
+    res.send({
+      url: randomImage,
+    });
+  });
+})
+
 export default router; 
