@@ -11,6 +11,10 @@ router.get('/pages/internet', async(req, res) => {
     res.render('./pages/api/internet', { data: internet })
 })
 
+router.get('/pages/game', async(req, res) => {
+    res.render('./pages/api/game', { data: game })
+})
+
 router.get('/pages/islami', async(req, res) => {
     res.render('./pages/api/islami', { data: islami })
 })
