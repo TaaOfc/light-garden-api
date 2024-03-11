@@ -4,6 +4,8 @@ const axios = require('axios')
 
 //―――――――――――――――――――――――――――――――――――――――――― ┏ Funtion App ┓ ―――――――――――――――――――――――――――――――――――――――――― \\
 
+const router = express();
+
 async function fetchJson (url, options) {
     try {
         options ? options : {}
@@ -55,8 +57,6 @@ exports.runtime = function(seconds) {
 	return dDisplay + hDisplay + mDisplay + sDisplay;
 }
 
-export {
-fetchJson
-}
+export default router
 
 
