@@ -2,6 +2,7 @@ import axios from "axios";
 import cheerio from "cheerio";
 import ytdl from 'ytdl-core';
 import fs from 'fs'
+import fetchJson from 'node-fetch'
 
 
 /*
