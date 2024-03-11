@@ -555,6 +555,7 @@ function quotesanime() {
 
 export {
     hentai,
+    tebakkata,
     nhentai,
     ttdl,
     igdl,
