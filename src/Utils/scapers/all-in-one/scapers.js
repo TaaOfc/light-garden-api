@@ -570,6 +570,7 @@ function quotesanime() {
 
 export {
     hentai,
+    milf,
     tebakkata,
     nhentai,
     ttdl,
