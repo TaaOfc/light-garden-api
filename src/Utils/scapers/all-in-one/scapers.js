@@ -9,13 +9,12 @@ GAME
 async function tebakkata() {
 let ra = await fetchJson('https://raw.githubusercontent.com/AlipBot/data-rest-api/main/tebakkata.json')
 	let ha = ra[Math.floor(Math.random() * ra.length)]
-	limitapikey(req.query.apikey)
   res.json({
 	status: true,
 	creator: `${creator}`,
 	result: ha
    })
-   resolve(res.json)
+   resolve(res.json);
 }
 /*
 INTERNET 
