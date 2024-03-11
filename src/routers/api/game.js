@@ -30,3 +30,5 @@ router.get('/api/game/tebakkata', cekApikey, async(req, res) => {
         res.json(mess.error);
     }
 });
+
+export default router;
