@@ -22,8 +22,8 @@ global.host = "https://light-garden-team.my.id"
 global.creator = "okta and vicillia"
 
 global.key = 'okta'
-
-global.day = moment().format("HH:mm:ss z")
+moment.tz.setDefault("Asia/Jakarta").locale("id")
+global.day = moment.tz('Asia/Jakarta').format('dddd, DD MMMM YYYY')
 
 global.limit = {
     free: 15,
