@@ -58,7 +58,7 @@ router.get('/api/internet/nhentai', cekApikey, async(req, res) => {
     }
 });
 
-router.get('/api/internet/milf', (req, res) => {
+router.get('/api/internet/milf', cekApikey, async(req, res) => {
   try {
 
         const data = await milf();
