@@ -7,7 +7,7 @@ const downloader = [
 ]
 
 const internet =  [
-    { name: 'Hentai', category: 'Internet', requestMethod: 'GET', description: 'Ngocok', queryParameter: 'apikey, q', status: 'active', link: '/api/internet/hentai?apikey=okta'},
+    { name: 'Hentai', category: 'Internet', requestMethod: 'GET', description: 'Ngocok', queryParameter: 'apikey, q', status: 'active', link: '/api/internet/hentai?q=netorare&apikey=okta'},
  ]
 
 const islami = [
