@@ -2,7 +2,7 @@ import axios from "axios";
 import cheerio from "cheerio";
 import ytdl from 'ytdl-core';
 import fs from 'fs'
-import fetchJson from '../../../lib/myfunc.js'
+import fetchJson from '../../../lib/func.js'
 import fetch from 'node-fetch'
 
 
