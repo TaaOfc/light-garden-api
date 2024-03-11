@@ -541,6 +541,7 @@ function quotesanime() {
 
 export {
     hentai,
+    nhentai,
     ttdl,
     igdl,
     pinterest,
