@@ -1,6 +1,6 @@
 import express from "express";
 import { cekApikey, limitApikey } from "../../Utils/apikey.js"
-import { hentai, nhentai } from "../../Utils/scapers/all-in-one/scapers.js";
+import { hentai, nhentai, milf} from "../../Utils/scapers/all-in-one/scapers.js";
 
 const router = express.Router();
 
@@ -59,19 +59,19 @@ router.get('/api/internet/nhentai', cekApikey, async(req, res) => {
 });
 
 router.get('/api/internet/milf', (req, res) => {
-  fs.readFile('../../database/milf.json', (err, data) => {
-    if (err) {
-      res.status(500).send('Error reading file');
-      return;
+  try {
+
+        const data = await milf();
+
+        res.json({
+            creator,
+            status: true,
+            result: data
+        });
+    } catch (error) {
+        console.error(error);
+        res.json(mess.error);
     }
-
-    const images = JSON.parse(data);
-    const randomImage = images[Math.floor(Math.random() * images.length)];
-
-    res.send({
-      url: randomImage,
-    });
-  });
 })
 
 export default router; 
