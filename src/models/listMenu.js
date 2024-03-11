@@ -18,7 +18,7 @@ const islami = [
 ]
 
 const game = [
-    {name: 'Tebak Kata', category: 'Game', requestMethod: 'GET' ,description: 'Game Tebak Kata', queryParameter: 'apikey', status: 'active', link: '/api/game/tebakkata?url=https://raw.githubusercontent.com/AlipBot/data-rest-api/main/tebakkata.json&apikey=okta'},
+    {name: 'Tebak Kata', category: 'Game', requestMethod: 'GET' ,description: 'Game Tebak Kata', queryParameter: 'apikey', status: 'active', link: '/api/game/tebakkata?apikey=okta'},
 ]
 
 const generate = [
