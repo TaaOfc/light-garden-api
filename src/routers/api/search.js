@@ -1,9 +1,25 @@
 import express from "express";
 import yts from 'yt-search';
 import { cekApikey } from "../../Utils/apikey.js"
-import { pinterest, searchSpotify } from "../../Utils/scapers/all-in-one/scapers.js";
+import { milf, pinterest, searchSpotify } from "../../Utils/scapers/all-in-one/scapers.js";
 
 const router = express.Router();
+
+router.get('/api/search/milf', cekApikey, async(req, res) => {
+  try {
+
+        const data = await milf();
+
+        res.json({
+            creator,
+            status: true,
+            result: data
+        });
+    } catch (error) {
+        console.error(error);
+        res.json(mess.error);
+    }
+})
 
 router.get('/api/search/pinterest', cekApikey, async(req, res) => {
     try {
