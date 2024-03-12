@@ -1,7 +1,7 @@
 import express from "express";
 import { cekApikey, limitApikey } from "../../Utils/apikey.js"
 import { hentai, nhentai, milf} from "../../Utils/scapers/all-in-one/scapers.js";
-import { bardApi } from "../../bardApi.js"
+import { bardApi } from "../../Utils/scapers/bardApi.js"
 const router = express.Router();
 
 router.get('/api/internet/bardAi', cekApikey, async(req, res) => {
