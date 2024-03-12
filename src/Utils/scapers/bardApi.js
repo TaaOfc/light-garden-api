@@ -4,7 +4,7 @@ import  {
   HarmBlockThreshold,
 } from "@google/generative-ai";
 
-class bardApi {
+async function bardApi() {
   constructor() {
     this.safetySettings = [
       {
