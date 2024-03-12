@@ -27,6 +27,7 @@ const generate = [
 ]
 
 const searcher = [
+    {mame: 'milf', category: 'Searcher', requestMethod: 'GET', description: 'Ngocok Teros', queryParameter: 'apikey', status: 'active', link: 'api/internet/milf?apikey=okta'},
     {name: 'Pinterest', category: 'Searcher', requestMethod: 'GET', description: 'Search Image In Pinterest', queryParameter: 'apikey, q', status: 'active', link: '/api/search/pinterest?q=naisa&apikey=okta'},
     {name: 'Youtube', category: 'Searcher', requestMethod: 'GET', description: 'Search Url And Info In Youtube', queryParameter: 'apikey, q', status: 'active', link: '/api/search/youtube?q=penjaga%20hati&apikey=okta'},
     {name: 'Spotify', category: 'Searcher', requestMethod: 'GET', description: 'Search Sound And Info In Spotify', queryParameter: 'apikey, q', status: 'active', link: '/api/search/spotify?q=penjaga%20hati&apikey=okta'},
