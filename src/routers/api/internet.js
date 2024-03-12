@@ -4,13 +4,13 @@ import { hentai, nhentai, milf} from "../../Utils/scapers/all-in-one/scapers.js"
 import { bardApi } from "../../Utils/scapers/bardApi.js"
 const router = express.Router();
 
-router.get('/api/internet/bardAi', cekApikey, async(req, res) => {
+router.get('/api/internet/bardApi', cekApikey, async(req, res) => {
     try {
         const q = req.query.q;
 
         if (!q) return res.json(global.mess.need.q);
 
-        const data = await bardAi(q);
+        const data = await bardApi(q);
 
         if (!data) {
             return res.json({
