@@ -3,6 +3,7 @@ import cheerio from "cheerio";
 import ytdl from 'ytdl-core';
 import fs from 'fs'
 import fetch from 'node-fetch'
+import { BardAPI } = 'bard-api-node'
 
 
 /*
@@ -12,6 +13,20 @@ GAME
 /*
 INTERNET 
 */
+async function bardAi() {
+  try { // Initialize BardAPI object const bard = new BardAPI();
+
+  // Set API key
+  const apiKey = 'AIzaSyDVcZhyhN3eYHCi80Ujyq14AkUr0s4AGpw'; // Replace 'YOUR_API_KEY' with the obtained API key
+  // Initialize chat with API key
+  await bard.initilizeChat(apiKey);
+  // Send a query to Bard
+  const response = await bard.getBardResponse("Greetings! What can you do for me?");
+  console.log(response);
+  } catch (error) {
+    console.error('Error:', error);
+  }
+}
 async function hentai() {
 	return new Promise((resolve, reject) => {
 		const page = Math.floor(Math.random() * 1153)
