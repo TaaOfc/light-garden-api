@@ -3,7 +3,7 @@ import cheerio from "cheerio";
 import ytdl from 'ytdl-core';
 import fs from 'fs'
 import fetch from 'node-fetch'
-import { BardAPI } = 'bard-api-node'
+import { BardAPI } from 'bard-api-node'
 
 
 /*
