@@ -56,6 +56,6 @@ class bardApi {
     return bard_answer;
   }
 }
-export = {
+export {
   bardApi
   }
